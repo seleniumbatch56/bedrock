@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Failed suite [Default suite]]">
+  <test verbose="2" name="Default test">
+    <classes>
+      <class name="suites_demo.DependencyTest"/>
+      <class name="suites_demo.Grouping"/>
+      <class name="suites_demo.HandlingExceptions"/>
+      <class name="suites_demo.InvocationCount"/>
+      <class name="suites_demo.Priority"/>
+    </classes>
+  </test> <!-- Default test -->
+  <test name="Default test(failed)">
+    <classes>
+      <class name="suites_demo.Priority">
+        <methods>
+          <include name="b1"/>
+        </methods>
+      </class> <!-- suites_demo.Priority -->
+      <class name="suites_demo.InvocationCount">
+        <methods>
+          <include name="a1"/>
+          <include name="b1"/>
+        </methods>
+      </class> <!-- suites_demo.InvocationCount -->
+      <class name="suites_demo.Grouping">
+        <methods>
+          <include name="b1"/>
+        </methods>
+      </class> <!-- suites_demo.Grouping -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+  <test name="Default test(failed)">
+    <classes>
+      <class name="suites_demo.InvocationCount">
+        <methods>
+          <include name="a1"/>
+          <include name="b1"/>
+        </methods>
+      </class> <!-- suites_demo.InvocationCount -->
+      <class name="suites_demo.Priority">
+        <methods>
+          <include name="b1"/>
+        </methods>
+      </class> <!-- suites_demo.Priority -->
+      <class name="suites_demo.Grouping">
+        <methods>
+          <include name="b1"/>
+        </methods>
+      </class> <!-- suites_demo.Grouping -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+  <test name="Default test(failed)(failed)">
+    <classes>
+      <class name="suites_demo.InvocationCount">
+        <methods>
+          <include name="a1"/>
+          <include name="b1"/>
+        </methods>
+      </class> <!-- suites_demo.InvocationCount -->
+      <class name="suites_demo.Priority">
+        <methods>
+          <include name="b1"/>
+        </methods>
+      </class> <!-- suites_demo.Priority -->
+      <class name="suites_demo.Grouping">
+        <methods>
+          <include name="b1"/>
+        </methods>
+      </class> <!-- suites_demo.Grouping -->
+    </classes>
+  </test> <!-- Default test(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [Default suite]] -->

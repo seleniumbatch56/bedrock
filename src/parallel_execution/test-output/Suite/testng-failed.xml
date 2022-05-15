@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <parameter name="password" value="123456"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="userName" value="seleniumbatch56"/>
+  <test thread-count="2" name="Test_Chrome">
+    <parameter name="password" value="123456"/>
+    <parameter name="browser" value="chrome"/>
+    <parameter name="userName" value="seleniumbatch56"/>
+    <classes>
+      <class name="parallel_execution.ForgottenPassword"/>
+    </classes>
+  </test> <!-- Test_Chrome -->
+</suite> <!-- Failed suite [Suite] -->
